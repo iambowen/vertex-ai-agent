@@ -1,0 +1,9 @@
+{
+  "name": "cb93b380-4989-4a7b-891f-65b935de39b6",
+  "displayName": "flight_booking_tool",
+  "description": "Book flights.",
+  "openApiSpec": {
+  
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

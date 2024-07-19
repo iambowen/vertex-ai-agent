@@ -1,0 +1,9 @@
+{
+  "name": "47c3ac51-204c-40c2-b4ad-a88ebd8b55b9",
+  "displayName": "places_search",
+  "description": "Get information about places and points of interest.",
+  "openApiSpec": {
+  
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

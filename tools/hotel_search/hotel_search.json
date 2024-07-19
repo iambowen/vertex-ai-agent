@@ -1,0 +1,9 @@
+{
+  "name": "8de8035c-0d51-4370-a623-44f78eb0e6c8",
+  "displayName": "hotel_search",
+  "description": "Get information about hotels.",
+  "openApiSpec": {
+  
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

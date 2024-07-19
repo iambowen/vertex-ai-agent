@@ -1,0 +1,9 @@
+{
+  "name": "bfa22198-b9a6-491a-9940-54842d060ac8",
+  "displayName": "get_user_profile",
+  "description": "Get user profiles.",
+  "openApiSpec": {
+  
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

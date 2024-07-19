@@ -1,0 +1,53 @@
+{
+  "name": "4d71cc92-82a6-4787-9f6c-72dcad5967aa",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "There's nothing like warm sun and fresh salt air! ☀️🌊\nHere's a few popular beach destinations in Europe: \n\n- Barcelona\n- Ibiza\n- Mykonos\n- Santorini\n- Crete\n- Rhodes\n- Corfu\n- Zakynthos\n- Majorca\n- Tenerife"
+    }
+  }, {
+    "userUtterance": {
+      "text": "We've never been to Greece. Can you show more cities there that would be good for vacation?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sure! Here are some family friendly beach destinations in Greece: \n\n- Athens\n- Thessaloniki\n- Corfu\n- Zakynthos\n- Crete\n- Rhodes\n- Santorini\n- Mykonos\n- Naxos\n- Paros"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Thessaloniki"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/cb8ffec2-a996-4cf2-8682-af4c19a33a66",
+      "playbookInput": {
+        "precedingConversationSummary": "The user wants to book a hotel in Thessaloniki",
+        "parameters": [ {
+          "name": "city",
+          "value": "Thessaloniki"
+        }, {
+          "name": "num_travelers",
+          "value": 5
+        }, {
+          "name": "num_rooms",
+          "value": 2
+        } ],
+        "actionParameters": {
+          "city": "Thessaloniki",
+          "num_rooms": 2,
+          "num_travelers": 5
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The customer was able to book a hotel in Thessaloniki"
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to go on a beach trip somewhere in Europe"
+  },
+  "playbookOutput": {
+    "executionSummary": "The agent presented lists of beach destinations in Europe and Greece. The user selected Thessaloniki to book a hotel."
+  },
+  "displayName": "inspiration_with_image_click_1",
+  "retrievalStrategy": "DEFAULT"
+}

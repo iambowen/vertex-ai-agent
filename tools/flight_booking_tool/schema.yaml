@@ -1,0 +1,114 @@
+openapi: 3.0.2
+info:
+  title: Flight booking APIs
+  description: >-
+    This API books flights
+  version: 1.0
+servers:
+  - url: https://www.example.com
+paths:
+  /search_flights:
+    post:
+      summary: Search or get booking information for flights.
+      operationId: search_flights
+      parameters:
+        - name: session_id
+          in: query
+          description: ID of session to return
+          required: true
+          schema:
+            $ref: '@dialogflow/sessionId'
+      requestBody:
+        description: Query
+        content:
+          application/json:
+            schema:
+              required:
+                - origin
+                - destination
+                - earliest_departure_date
+                - earliest_return_date
+                - num_adult_passengers
+                - num_child_passengers
+              type: object
+              properties:
+                origin:
+                  description: The location where the trip starts. If the location is not specified in the user query, it should be left empty.
+                  type: string
+                destination:
+                  description: The final destination of the trip. If it is not provided in the user query, it should be left empty.
+                  type: string
+                earliest_departure_date:
+                  description: Filter for the earliest (or only) departure date in YYYY-MM-DD format.
+                  type: string
+                earliest_return_date:
+                  description: Filter for the earliest (or only) return date in YYYY-MM-DD format.
+                  type: string
+                latest_departure_date:
+                  description: Filter for the latest departure date in YYYY-MM-DD format. Set this to be the same as earliest_departure_date unless a departure date range is requested.
+                  type: string
+                latest_return_date:
+                  description: Filter for the latest return date in YYYY-MM-DD format. Set this to be the same as earliest_return_date unless a return date range is requested.
+                  type: string
+                max_price:
+                  description: Filter for maximum price limit of the flight.
+                  type: integer
+                max_stops:
+                  description: Filter for maximum number of stops/layovers.
+                  type: integer
+                cheapest:
+                  description: If TRUE, the results will be sorted by price (in ascending order).
+                  type: boolean
+                num_adult_passengers:
+                  description: The number of adult passengers.
+                  type: integer
+                num_child_passengers:
+                  description: The number of child passengers.
+                  type: integer
+      responses:
+        '200':
+          description: Successfully got results (may be empty)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: string
+  /book_flight:
+    post:
+      summary: Book the flight with flight number.
+      operationId: book_flight
+      parameters:
+        - name: session_id
+          in: query
+          description: ID of session to return
+          required: true
+          schema:
+            $ref: '@dialogflow/sessionId'
+      requestBody:
+        description: Query
+        content:
+          application/json:
+            schema:
+              required:
+              - flight_number
+              type: object
+              properties:
+                flight_number:
+                  description: The flight number
+                  type: string
+      responses:
+        '200':
+          description: Successfully got results (may be empty)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: string

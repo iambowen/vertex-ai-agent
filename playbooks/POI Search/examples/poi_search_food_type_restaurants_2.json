@@ -1,0 +1,64 @@
+{
+  "name": "bf90b427-afef-4a6d-b9dd-2339b379a23c",
+  "actions": [ {
+    "toolUse": {
+      "tool": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/tools/47c3ac51-204c-40c2-b4ad-a88ebd8b55b9",
+      "action": "places_search_tool",
+      "inputParameters": [ {
+        "name": "request",
+        "value": {
+          "city": "New York City",
+          "preferences": "dim sum restaurant chelsea"
+        }
+      } ],
+      "outputParameters": [ {
+        "name": "response",
+        "value": {
+          "results": [ {
+            "name": "Dim Sum Szechuan"
+          }, {
+            "name": "Hey Yuet"
+          }, {
+            "name": "Dim Sum Palace"
+          } ]
+        }
+      } ],
+      "inputActionParameters": {
+        "request": {
+          "city": "New York City",
+          "preferences": "dim sum restaurant chelsea"
+        }
+      },
+      "outputActionParameters": {
+        "response": {
+          "results": [ {
+            "name": "Dim Sum Szechuan"
+          }, {
+            "name": "Hey Yuet"
+          }, {
+            "name": "Dim Sum Palace"
+          } ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Here are great places to get dim sum in the Chelsea area of New York City: \n\n- Dim Sum Szechuan\n- Hey Yuet\n- Dim Sum Palace"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to know where to find dim sum restaurants in the Chelsea neighborhood of New York City.",
+    "parameters": [ {
+      "name": "city",
+      "value": "New York City"
+    } ],
+    "actionParameters": {
+      "city": "New York City"
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "The agent shared the list of dim sum in the Chelsea neighborhood in New York City"
+  },
+  "displayName": "poi_search_food_type_restaurants_2",
+  "retrievalStrategy": "DEFAULT"
+}

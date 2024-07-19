@@ -1,0 +1,53 @@
+{
+  "name": "0f19a052-f1ba-4682-a2a7-cb2892246f19",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "I love skiing! Here's a few popular ski destinations in the United States: \n\n- Arapahoe Basin\n- Aspen Highlands\n- Beaver Creek\n- Breckenridge\n- Sun Peaks Resort"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Ah those are nice but I think we'd like to stay stateside. Maybe colorado perhaps?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, take a look at these ski resorts in Coloardo:\n\n- Arapahoe Basin\n- Aspen Highlands\n- Beaver Creek\n- Breckenridge\n- Crested Butte\n- Keystone\n- Monarch Mountain\n- Loveland\n- Purgatory Resort\n- Steamboat Springs"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Crested Butte sounds cool! Let's take a look at some hotels or resorts there"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/cb8ffec2-a996-4cf2-8682-af4c19a33a66",
+      "playbookInput": {
+        "precedingConversationSummary": "The user wants to book a hotel in Crested Butte",
+        "parameters": [ {
+          "name": "city",
+          "value": "Crested Butte"
+        }, {
+          "name": "num_travelers",
+          "value": 5
+        }, {
+          "name": "num_rooms",
+          "value": 2
+        } ],
+        "actionParameters": {
+          "city": "Crested Butte",
+          "num_rooms": 2,
+          "num_travelers": 5
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The customer was able to book a hotel in Crested Butte"
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to take a ski trip with their family"
+  },
+  "playbookOutput": {
+    "executionSummary": "Agent presented list of ski resorts. User then asked to book a hotel in Crested Butte."
+  },
+  "displayName": "inspiration_1",
+  "retrievalStrategy": "STATIC"
+}

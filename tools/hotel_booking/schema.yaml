@@ -1,0 +1,55 @@
+openapi: 3.0.2
+info:
+  title: Hotel booking APIs
+  description: >-
+    This API books hotels
+  version: 1.0
+servers:
+  - url: https://example.com
+paths:
+  /book_hotel:
+    post:
+      summary: Book the hotel.
+      operationId: book_hotel
+      parameters:
+        - name: session_id
+          in: query
+          description: ID of session to return
+          required: true
+          schema:
+            $ref: '@dialogflow/sessionId'
+      requestBody:
+        description: Query
+        content:
+          application/json:
+            schema:
+              required:
+                - hotel
+                - check_in_date
+                - check_out_date
+                - num_travelers
+                - num_rooms
+              type: object
+              properties:
+                hotel:
+                  type: string
+                check_in_date:
+                  type: string
+                check_out_date:
+                  type: string
+                num_travelers:
+                  type: integer
+                num_rooms:
+                  type: integer
+      responses:
+        '200':
+          description: Successfully got results (may be empty)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: string

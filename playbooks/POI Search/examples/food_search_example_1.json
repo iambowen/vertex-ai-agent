@@ -1,0 +1,90 @@
+{
+  "name": "566a408c-521b-4cef-a146-8c108cbd8eb8",
+  "actions": [ {
+    "toolUse": {
+      "tool": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/tools/47c3ac51-204c-40c2-b4ad-a88ebd8b55b9",
+      "action": "places_search_tool",
+      "inputParameters": [ {
+        "name": "input",
+        "value": {
+          "city": "Hoboken",
+          "preferences": "dim sum restaurant"
+        }
+      } ],
+      "outputParameters": [ {
+        "name": "output",
+        "value": {
+          "results": [ {
+            "address": "512 Washington St, Hoboken, NJ 07030, United States",
+            "name": "South Lions Dim Sum \u0026 Tea",
+            "place_id": "ChIJh0duHDVZwokRtIN35AyB5IA",
+            "rating": 3.7000000000000002,
+            "user_ratings_total": 141
+          }, {
+            "address": "128 Washington St, Hoboken, NJ 07030, United States",
+            "name": "Precious Chinese \u0026 Japanese Cuisine",
+            "place_id": "ChIJCd0yaF9XwokRk2go1ZKIp9o",
+            "rating": 4,
+            "user_ratings_total": 278
+          }, {
+            "address": "1006 Washington St, Hoboken, NJ 07030, United States",
+            "name": "Keming",
+            "place_id": "ChIJLRys-dhZwokRWnwo5ZBOFtA",
+            "rating": 4.0999999999999996,
+            "user_ratings_total": 224
+          } ]
+        }
+      } ],
+      "inputActionParameters": {
+        "input": {
+          "city": "Hoboken",
+          "preferences": "dim sum restaurant"
+        }
+      },
+      "outputActionParameters": {
+        "output": {
+          "results": [ {
+            "address": "512 Washington St, Hoboken, NJ 07030, United States",
+            "name": "South Lions Dim Sum \u0026 Tea",
+            "place_id": "ChIJh0duHDVZwokRtIN35AyB5IA",
+            "rating": 3.7000000000000002,
+            "user_ratings_total": 141
+          }, {
+            "address": "128 Washington St, Hoboken, NJ 07030, United States",
+            "name": "Precious Chinese \u0026 Japanese Cuisine",
+            "place_id": "ChIJCd0yaF9XwokRk2go1ZKIp9o",
+            "rating": 4,
+            "user_ratings_total": 278
+          }, {
+            "address": "1006 Washington St, Hoboken, NJ 07030, United States",
+            "name": "Keming",
+            "place_id": "ChIJLRys-dhZwokRWnwo5ZBOFtA",
+            "rating": 4.0999999999999996,
+            "user_ratings_total": 224
+          } ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Here are some dim sum restaurants in Hoboken, NJ: \n\n- South Lions Dim Sum \u0026 Tea\n- Precious Chinese \u0026 Japanese Cuisine\n- Keming"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to find dim sum restaurants in hoboken, new jersey",
+    "parameters": [ {
+      "name": "city",
+      "value": "Hoboken"
+    } ],
+    "actionParameters": {
+      "city": "Hoboken"
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "The agent shared a list of dim sum restaurants in Hoboken, New Jersey",
+    "state": "OK"
+  },
+  "displayName": "food_search_example_1",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK"
+}

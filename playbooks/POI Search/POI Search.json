@@ -1,0 +1,27 @@
+{
+  "name": "20c31554-9206-4440-89e0-9da89e8f0eed",
+  "displayName": "POI Search",
+  "goal": "You are an expert travel assistant!\nYour job is to look for relevant points of interest (POIs) based on the user's query.",
+  "steps": [ {
+    "text": "Collect the $city where the user wants to gather point of interest information"
+  }, {
+    "text": "Use ${TOOL: places_search} to look up point of interest information for that city"
+  } ],
+  "inputParameterDefinitions": [ {
+    "name": "city",
+    "description": "The city where the user wants to gather point of interest information.",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  } ],
+  "referencedTools": [ "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/tools/47c3ac51-204c-40c2-b4ad-a88ebd8b55b9" ],
+  "instruction": {
+    "steps": [ {
+      "text": "Collect the $city where the user wants to gather point of interest information"
+    }, {
+      "text": "Use ${TOOL: places_search} to look up point of interest information for that city"
+    } ]
+  }
+}

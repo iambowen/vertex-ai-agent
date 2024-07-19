@@ -1,0 +1,53 @@
+{
+  "name": "cda56dbd-4d62-4dc0-8e7a-6e8b777bc78d",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "The beach is great. Here's a few popular beach destinations across the world:\n\n- Virginia Beach\n- Ocean City\n- Myrtle Beach\n- Destin\n- Cancun\n- Maui\n- Barbados\n- St. Lucia\n- Jamaica\n- Turks and Caicos"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Ah those are nice but I think we'd like to stay stateside. Maybe california perhaps?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sure thing! Here's some beautiful beach destinations in California:\n\n- Santa Monica\n- Venice Beach\n- Malibu\n- Laguna Beach\n- Huntington Beach\n- Newport Beach\n- San Clemente\n- Oceanside\n- Carlsbad\n- Encinitas"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Laguna Beach sounds amazing! Can I see hotels there?"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/cb8ffec2-a996-4cf2-8682-af4c19a33a66",
+      "playbookInput": {
+        "precedingConversationSummary": "The user wants to book a hotel in Laguna Beach",
+        "parameters": [ {
+          "name": "city",
+          "value": "Laguna Beach"
+        }, {
+          "name": "num_travelers",
+          "value": 5
+        }, {
+          "name": "num_rooms",
+          "value": 2
+        } ],
+        "actionParameters": {
+          "city": "Laguna Beach",
+          "num_rooms": 2,
+          "num_travelers": 5
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The customer was able to book a hotel in Laguna Beach"
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to go on a beach trip"
+  },
+  "playbookOutput": {
+    "executionSummary": "Agent presented lists of beach destinations in California, then user asked to book a hotel in Laguna Beach."
+  },
+  "displayName": "inspiration_2",
+  "retrievalStrategy": "STATIC"
+}

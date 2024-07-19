@@ -1,0 +1,73 @@
+{
+  "name": "4c2d4d6f-c969-4306-82d7-ce6bd9ab60eb",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Welcome back Carmin! What can I help you with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Find me hotels to stay in San Antonio"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/cb8ffec2-a996-4cf2-8682-af4c19a33a66",
+      "playbookInput": {
+        "precedingConversationSummary": "The user wants to book a hotel in San Antonio, Texas",
+        "parameters": [ {
+          "name": "city_name",
+          "value": "San Antonio"
+        } ],
+        "actionParameters": {
+          "city_name": "San Antonio"
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The agent booked the hotel for the user and shared the confirmation number.",
+        "state": "OK"
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Anything else I can help you with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Yeah I want to book a hotel in Austin TX"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/cb8ffec2-a996-4cf2-8682-af4c19a33a66",
+      "playbookInput": {
+        "precedingConversationSummary": "User wants to book a hotel in Austin, Texas",
+        "parameters": [ {
+          "name": "city",
+          "value": "Austin"
+        } ],
+        "actionParameters": {
+          "city": "Austin"
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The agent booked the hotel for the user and shared the confirmation number.",
+        "state": "OK"
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Would you like me to help you with anything else?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I'm done"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Thanks for traveling with Google. Have a nice day!"
+    }
+  } ],
+  "displayName": "hotel_booking_3",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_PENDING"
+}

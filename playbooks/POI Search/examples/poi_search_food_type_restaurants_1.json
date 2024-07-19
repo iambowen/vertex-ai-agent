@@ -1,0 +1,57 @@
+{
+  "name": "d8637c67-3bc7-4ecc-b58b-63b227cf1210",
+  "actions": [ {
+    "toolUse": {
+      "tool": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/tools/47c3ac51-204c-40c2-b4ad-a88ebd8b55b9",
+      "action": "places_search_tool",
+      "inputParameters": [ {
+        "name": "request",
+        "value": {
+          "city": "Cambridge",
+          "preferences": "clam chowder restaurant"
+        }
+      } ],
+      "outputParameters": [ {
+        "name": "response",
+        "value": {
+          "results": [ {
+            "name": "Courthouse Seafood"
+          }, {
+            "name": "The Hourly Oyster House"
+          }, {
+            "name": "Alive \u0026 Kicking Lobsters"
+          } ]
+        }
+      } ],
+      "inputActionParameters": {
+        "request": {
+          "city": "Cambridge",
+          "preferences": "clam chowder restaurant"
+        }
+      },
+      "outputActionParameters": {
+        "response": {
+          "results": [ {
+            "name": "Courthouse Seafood"
+          }, {
+            "name": "The Hourly Oyster House"
+          }, {
+            "name": "Alive \u0026 Kicking Lobsters"
+          } ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Here are great places to get clam chowder in Cambridge!: \n\n- Courthouse Seafood\n- The Hourly Oyster House\n- Alive \u0026 Kicking Lobsters"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to know where to find clam chowder restaurants in Cambridge, Massachusetts "
+  },
+  "playbookOutput": {
+    "executionSummary": "The agent shared the list of clam chowder restaurants in Cambridge, Massachusetts."
+  },
+  "displayName": "poi_search_food_type_restaurants_1",
+  "retrievalStrategy": "DEFAULT"
+}

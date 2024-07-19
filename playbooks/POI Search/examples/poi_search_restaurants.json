@@ -1,0 +1,59 @@
+{
+  "name": "2f123ed8-e9c3-47c8-9c34-99af7153e972",
+  "actions": [ {
+    "toolUse": {
+      "tool": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/tools/47c3ac51-204c-40c2-b4ad-a88ebd8b55b9",
+      "action": "places_search_tool",
+      "inputParameters": [ {
+        "name": "request",
+        "value": {
+          "city": "Chicago",
+          "preferences": "restaurant"
+        }
+      } ],
+      "outputParameters": [ {
+        "name": "response",
+        "value": {
+          "results": [ {
+            "name": "312 Chicago"
+          }, {
+            "name": "Lou Malnati's Pizzeria"
+          }, {
+            "name": "Giordano's"
+          } ]
+        }
+      } ],
+      "inputActionParameters": {
+        "request": {
+          "city": "Chicago",
+          "preferences": "restaurant"
+        }
+      },
+      "outputActionParameters": {
+        "response": {
+          "results": [ {
+            "name": "312 Chicago"
+          }, {
+            "name": "Lou Malnati's Pizzeria"
+          }, {
+            "name": "Giordano's"
+          } ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Here are some restaurants near Chicago:\n\n- 312 Chicago\n- Lou Malnati's Pizzeria\n- Giordano's"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to know about restaurants in Chicago"
+  },
+  "playbookOutput": {
+    "executionSummary": "The agent shared a list of restaurants in Chicago.",
+    "state": "OK"
+  },
+  "displayName": "poi_search_restaurants",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK"
+}

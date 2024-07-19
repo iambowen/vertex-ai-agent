@@ -1,0 +1,63 @@
+{
+  "name": "dcbe720f-d228-4af8-b2f8-5b02cb77b498",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "You're looking for coffee shops in Austin, correct?"
+    }
+  }, {
+    "toolUse": {
+      "tool": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/tools/47c3ac51-204c-40c2-b4ad-a88ebd8b55b9",
+      "action": "places_search_tool",
+      "inputParameters": [ {
+        "name": "request",
+        "value": {
+          "city": "Austin",
+          "preferences": "coffee shops"
+        }
+      } ],
+      "outputParameters": [ {
+        "name": "response",
+        "value": {
+          "results": [ {
+            "name": "Greater Goods Roaasting"
+          }, {
+            "name": "Epoch Coffee"
+          }, {
+            "name": "Revival Coffee"
+          } ]
+        }
+      } ],
+      "inputActionParameters": {
+        "request": {
+          "city": "Austin",
+          "preferences": "coffee shops"
+        }
+      },
+      "outputActionParameters": {
+        "response": {
+          "results": [ {
+            "name": "Greater Goods Roaasting"
+          }, {
+            "name": "Epoch Coffee"
+          }, {
+            "name": "Revival Coffee"
+          } ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Here are some coffee shops near Austin: \n\n- Greater Goods Roasting\n- Epoch Coffee\n- Revival Coffee"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to know about coffee shops in Austin"
+  },
+  "playbookOutput": {
+    "executionSummary": "The agent shared the list of coffee shops near Austin.",
+    "state": "OK"
+  },
+  "displayName": "poi_search_coffee_shops",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK"
+}

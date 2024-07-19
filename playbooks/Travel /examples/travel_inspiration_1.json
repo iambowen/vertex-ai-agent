@@ -1,0 +1,62 @@
+{
+  "name": "7809fa9d-6ac5-4212-a11b-7ce4dc2c9e41",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Hi Patrick! I'm here to help with your booking experience. Where do you want to go today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "What are good cities to visit in Southern Europe for beaches and history?"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/b0b56b60-d3dd-4402-a684-05affced113f",
+      "playbookInput": {
+        "precedingConversationSummary": "The user wants to find cities in Southern Europe for beaches and history"
+      },
+      "playbookOutput": {
+        "executionSummary": "The customer was able to find a good city to visit in Southern Europe to travel to"
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Anything else I can help you with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Yeah I want to book a hotel in San Francisco"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/cb8ffec2-a996-4cf2-8682-af4c19a33a66",
+      "playbookInput": {
+        "precedingConversationSummary": "User wants to book a hotel in San Francisco.",
+        "parameters": [ {
+          "name": "city_name",
+          "value": "San Francisco"
+        } ],
+        "actionParameters": {
+          "city_name": "San Francisco"
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "User booked a hotel in San Francisco"
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Is there anything else I can help you with?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "No I'm good"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Thanks for traveling with Google! Have a nice day."
+    }
+  } ],
+  "displayName": "travel_inspiration_1",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_PENDING"
+}
