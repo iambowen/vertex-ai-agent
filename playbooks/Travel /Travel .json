@@ -28,6 +28,7 @@
     }
   } ],
   "referencedPlaybooks": [ "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/711c16e7-6cbb-41ac-92bf-8bd57b012cc9", "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/b0b56b60-d3dd-4402-a684-05affced113f", "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/cb8ffec2-a996-4cf2-8682-af4c19a33a66", "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/playbooks/20c31554-9206-4440-89e0-9da89e8f0eed" ],
+  "referencedTools": [ "projects/testingproject-164016/locations/us-west1/agents/bc0561c9-db86-4d89-b055-bf1315a3d50a/tools/47c3ac51-204c-40c2-b4ad-a88ebd8b55b9" ],
   "instruction": {
     "steps": [ {
       "text": "DO NOT attempt to help the user directly."
